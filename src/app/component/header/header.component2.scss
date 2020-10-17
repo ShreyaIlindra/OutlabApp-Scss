@@ -1,0 +1,40 @@
+.navbar-nav {
+    clear: both;
+    margin-top: -20px;
+  }
+  #nav-list{
+      padding:5px;
+  }
+  .right{
+      position:relative;
+  }
+  .ri1{
+      margin-top:20px;
+      position: absolute;
+      top:5px;
+      right: -130px;
+      margin-left:10px;
+  }
+  .ri2{
+      margin-top:20px;
+      margin-right:50px;
+      position: absolute;
+      top:5px;
+      right:-90px;
+  }
+  /*.ri1{
+      float:right;
+  }
+  .ri2{
+      float: right;
+  }*/
+  
+  @media(max-width:1200px){
+      .head{
+          width:100%;
+  
+      }
+      .navbar{
+          width:100%;
+      }
+  }

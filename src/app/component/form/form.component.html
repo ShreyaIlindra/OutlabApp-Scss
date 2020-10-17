@@ -1,0 +1,58 @@
+
+<div class="center">
+	
+    <h1> Feedback Form </h1>
+    
+    <form [formGroup] = "profileForm" (ngSubmit)='OnSubmit()'>
+     <label class="p">
+       <span style="margin-right:36px;">Name:</span> 
+     <input type="text" formControlName="name" size="30">
+     </label>
+    <br>
+     <label class="p" >
+       <span style="margin-right:42px;">Email:</span>
+       <input type="email" formControlName="email" size="30">
+     </label>
+    <br>
+     <label class="feed">
+      <span style="margin-right:42px;">Feedback:</span>
+      <input type="radio" id="great" formControlName="feedback" value="Great">
+      <label  class="f" for="great">Good</label>
+      <input type="radio" id="okay" formControlName="feedback" value="Okay">
+      <label class="f" for="okay">Okay</label>
+      <input type="radio" id="not good" formControlName="feedback" value="Not good">
+      <label class="f" for="not good">Not good</label>
+    </label>
+    <br>
+    <label class="p" >
+      <span style="margin-right:10px;">Comments:</span>
+      <textarea type="text" formControlName="comment" rows="2" cols="32"> </textarea>
+    </label>
+    <br>
+     
+    <button>Submit</button>
+    </form>
+    
+    <div class="Submit_details">
+        <ul>
+            <li class="li">
+                Name : {{Feed.name}}
+            </li>
+            <li class="li">
+                Email : {{Feed.email}}
+            </li>
+            <li class="li">
+                Feedback : {{Feed.feedback}}
+            </li>
+            <li class="li">
+                Comments : {{Feed.comment}}
+            </li>
+    </ul>
+    
+    </div>
+    <div class="success Submit_details2"></div>
+    
+    
+        
+            
+           

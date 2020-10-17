@@ -1,3 +1,20 @@
+%clickables {
+    margin-top:20px;
+    position: absolute;
+    top:5px;
+  }
+  
+  .ri1{
+      @extend %clickables;
+      right: -130px;
+      margin-left:10px;
+  }
+  .ri2{
+      @extend %clickables;
+      margin-right:50px;
+      right:-90px;
+  }
+
 .navbar-nav {
     clear: both;
     margin-top: -20px;
@@ -8,26 +25,6 @@
   .right{
       position:relative;
   }
-  .ri1{
-      margin-top:20px;
-      position: absolute;
-      top:5px;
-      right: -130px;
-      margin-left:10px;
-  }
-  .ri2{
-      margin-top:20px;
-      margin-right:50px;
-      position: absolute;
-      top:5px;
-      right:-90px;
-  }
-  /*.ri1{
-      float:right;
-  }
-  .ri2{
-      float: right;
-  }*/
   
   @media(max-width:1200px){
       .head{

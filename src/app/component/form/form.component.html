@@ -1,21 +1,26 @@
 
-<div class="center">
+<div class="center par">
 	
     <h1> Feedback Form </h1>
     
     <form [formGroup] = "profileForm" (ngSubmit)='OnSubmit()'>
-     <label class="p">
-       <span style="margin-right:36px;">Name:</span> 
+      <div class="p">
+     <label >
+       <span class="p1">Name:</span> 
      <input type="text" formControlName="name" size="30">
      </label>
+     </div>
     <br>
-     <label class="p" >
-       <span style="margin-right:42px;">Email:</span>
+    <div class="p">
+     <label  >
+       <span class="p2">Email:</span>
        <input type="email" formControlName="email" size="30">
      </label>
+   </div>
     <br>
-     <label class="feed">
-      <span style="margin-right:42px;">Feedback:</span>
+    <div class="p feed">
+     <label >
+      <span >Feedback:</span>
       <input type="radio" id="great" formControlName="feedback" value="Great">
       <label  class="f" for="great">Great</label>
       <input type="radio" id="okay" formControlName="feedback" value="Okay">
@@ -23,11 +28,14 @@
       <input type="radio" id="not good" formControlName="feedback" value="Not good">
       <label class="f" for="not good">Not good</label>
     </label>
+  </div>
     <br>
-    <label class="p" >
-      <span style="margin-right:10px;">Comments:</span>
+    <div class="p">
+    <label  >
+      <span class="p3">Comments:</span>
       <textarea type="text" formControlName="comment" rows="2" cols="32"> </textarea>
     </label>
+  </div>
     <br>
      
     <button>Submit</button>

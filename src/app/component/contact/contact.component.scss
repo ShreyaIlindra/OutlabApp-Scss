@@ -2,14 +2,28 @@ ul{
 	list-style:none;
 	padding-left:10px;
 }
-h2{
-    color:blue;
-    margin-top:15px;
+.marg{
+	h2{
+    color:black;
+    text-transform:uppercase;
+    margin-top:100px;
 	margin-bottom:30px;
 	padding-right: 0px;
 }
+	.row{
+
 .pad{
 	padding-right:0px;
 	padding-left:0px;
 	text-align:center;
+	background-color:#383838;
+	color:#f24b4b;
+	padding-top:50px;
+	padding-bottom:50px;
+	height:250px;
+	border-radius:5%;
+	margin-left:120px;
+	margin-right:120px;
+}
+	}
 }

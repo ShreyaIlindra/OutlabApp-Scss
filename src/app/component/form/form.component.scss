@@ -11,6 +11,9 @@
 .Submit_details{
     @extend %submit;
     background-color:lightblue;
+    h3{
+        margin-left:40px;
+    }
 }
 
 .Submit_details2{
